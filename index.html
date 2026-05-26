@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex, nofollow">
+<title>인스타 TOP 10 (5/22~5/26)</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:-apple-system,BlinkMacSystemFont,'Apple SD Gothic Neo','Noto Sans KR',sans-serif;background:linear-gradient(135deg,#FAFAFA,#F0F0F5);color:#262626;line-height:1.5;min-height:100vh}
+.wrap{max-width:1400px;margin:0 auto;padding:24px 16px}
+.hdr{text-align:center;background:white;padding:28px 16px;border-radius:16px;margin-bottom:20px;box-shadow:0 2px 12px rgba(0,0,0,0.04)}
+h1{font-size:clamp(22px,4vw,30px);font-weight:800;background:linear-gradient(135deg,#833AB4,#FD1D1D,#FCAF45);-webkit-background-clip:text;-webkit-text-fill-color:transparent;margin-bottom:6px}
+.sub{color:#8e8e8e;font-size:14px;margin-bottom:12px}
+.meta{display:flex;justify-content:center;gap:8px;flex-wrap:wrap;font-size:12px;color:#555}
+.meta span{background:#f5f5f5;padding:5px 10px;border-radius:14px}
+.filters{display:flex;gap:8px;flex-wrap:wrap;justify-content:center;margin-bottom:24px;padding:12px;background:white;border-radius:12px;position:sticky;top:8px;z-index:100;box-shadow:0 2px 4px rgba(0,0,0,0.04)}
+.fbtn{padding:8px 14px;border:2px solid #eee;background:white;border-radius:20px;cursor:pointer;font-size:13px;font-weight:500;color:#555;transition:all .2s}
+.fbtn:hover{background:#f5f5f5}
+.fbtn.active{background:var(--c,#333);border-color:var(--c,#333);color:white}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(380px,1fr));gap:20px}
+.card{background:white;border-radius:16px;overflow:hidden;box-shadow:0 2px 12px rgba(0,0,0,0.06);transition:transform .2s,box-shadow .2s;display:flex;flex-direction:column}
+.card:hover{transform:translateY(-3px);box-shadow:0 12px 28px rgba(0,0,0,0.12)}
+.rank-strip{color:white;padding:8px 16px;display:flex;justify-content:space-between;align-items:center;font-weight:700}
+.rank{font-size:16px}
+.type{font-size:12px;background:rgba(0,0,0,0.15);padding:3px 10px;border-radius:12px}
+header{display:flex;align-items:center;gap:12px;padding:14px 16px;border-bottom:1px solid #f0f0f0}
+.avatar{width:42px;height:42px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:20px;color:white;box-shadow:0 2px 6px rgba(0,0,0,0.1)}
+.user{flex:1;min-width:0}
+.name{font-weight:700;font-size:14px}
+.desc{font-size:11px;color:#8e8e8e;margin-top:2px}
+.date{font-size:12px;color:#8e8e8e;background:#f5f5f5;padding:4px 10px;border-radius:12px}
+.hook{padding:14px 16px;font-size:14px;font-style:italic;color:#333;background:linear-gradient(135deg,#FFF9F0,#FFF5F8);border-bottom:1px solid #f0f0f0}
+.stats{display:flex;padding:14px 16px;gap:8px;border-bottom:1px solid #f0f0f0}
+.stat{flex:1;text-align:center;padding:8px;background:#f9f9fb;border-radius:8px}
+.lbl{display:block;font-size:10px;color:#8e8e8e;text-transform:uppercase;letter-spacing:.5px}
+.val{display:block;font-size:16px;font-weight:700;margin-top:2px}
+.val.hi{color:#FD1D1D}
+.cap{padding:14px 16px;flex:1;max-height:280px;overflow-y:auto}
+.cap-lbl{font-size:11px;color:#8e8e8e;font-weight:600;margin-bottom:8px;text-transform:uppercase}
+.cap-short,.cap-full{font-size:13px;line-height:1.7;white-space:pre-wrap}
+.toggle{background:none;border:none;color:#00376b;cursor:pointer;font-size:13px;margin-top:6px;font-weight:500;padding:0}
+.toggle:hover{text-decoration:underline}
+.btn{display:flex;align-items:center;justify-content:center;gap:8px;padding:14px;color:white;text-decoration:none;font-weight:700;font-size:14px;transition:filter .2s}
+.btn:hover{filter:brightness(1.1)}
+footer{text-align:center;margin-top:40px;padding:24px;color:#8e8e8e;font-size:12px}
+footer p{margin:4px 0}
+.cap::-webkit-scrollbar{width:4px}
+.cap::-webkit-scrollbar-thumb{background:#ddd;border-radius:2px}
+@media(max-width:600px){.wrap{padding:12px 8px}.grid{grid-template-columns:1fr;gap:16px}.hdr{padding:20px 12px}.filters{padding:8px}.fbtn{padding:6px 10px;font-size:12px}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<div class="hdr">
+<h1>📊 인스타 TOP 10</h1>
+<p class="sub">5/22 ~ 5/26 · 참여도 기준 정렬</p>
+<div class="meta">
+<span>📦 수집 68개</span>
+<span>🎯 분석 58개</span>
+<span>👑 TOP 10</span>
+<span>🕘 2026.05.27 02:47 업뎃</span>
+</div>
+</div>
+<div class="filters"><button class="fbtn active" data-f="all">전체 (10)</button><button class="fbtn" data-f="chae2home" style="--c:#FFB347">🍳 채이홈 (3)</button><button class="fbtn" data-f="_lilys_home" style="--c:#5DADE2">🌸 릴리스홈 (2)</button><button class="fbtn" data-f="hehe_home_tem" style="--c:#FF6B9D">🏠 헤헤홈템 (2)</button><button class="fbtn" data-f="remio.pick" style="--c:#F39C12">🍃 레미오픽 (1)</button><button class="fbtn" data-f="gomson.salim" style="--c:#4ECDC4">🐻 곰손살림 (1)</button><button class="fbtn" data-f="living_pluss" style="--c:#FF6F61">💚 리빙플러스 (1)</button></div>
+<div class="grid">
+    <article class="card" data-account="remio.pick">
+        <div class="rank-strip" style="background:#F39C12">
+            <span class="rank">#1 🥇</span>
+            <span class="type">🎬 릴스</span>
+        </div>
+        <header>
+            <div class="avatar" style="background:#F39C12">🍃</div>
+            <div class="user">
+                <div class="name">@remio.pick</div>
+                <div class="desc">레미오픽 · 생활템</div>
+            </div>
+            <div class="date">5/24</div>
+        </header>
+        <div class="hook">"소풍 김밥 싸서 보냈더니 전화오더라구요..."</div>
+        <div class="stats">
+            <div class="stat"><span class="lbl">좋아요</span><span class="val">1,288</span></div>
+            <div class="stat"><span class="lbl">댓글</span><span class="val hi">10.8K</span></div>
+            <div class="stat"><span class="lbl">재생</span><span class="val">865.6K</span></div>
+        </div>
+        <div class="cap">
+            <div class="cap-lbl">📝 캡션</div>
+            <div class="cap-short">소풍 김밥 싸서 보냈더니 전화오더라구요...<br><br>보통 김밥 간 할때 참기름 소금만<br>넣으시는분들이 많은데<br>근데 이것만 딱 넣어줘도 진짜 맛있어요🥒<br><br>밥알이 코팅되면서 식어도<br>훨씬 촉촉하고 쫀득한데‼️<br><br>특히 단촛물 비…</div>
+            <div class="cap-full" style="display:none">소풍 김밥 싸서 보냈더니 전화오더라구요...<br><br>보통 김밥 간 할때 참기름 소금만<br>넣으시는분들이 많은데<br>근데 이것만 딱 넣어줘도 진짜 맛있어요🥒<br><br>밥알이 코팅되면서 식어도<br>훨씬 촉촉하고 쫀득한데‼️<br><br>특히 단촛물 비율 맞출 필요없이<br>이거 하나로 새콤달콤 감칠맛이 확 살아나서<br>김밥집느낌 나더라구요🙊<br><br>저는 뜨거운 밥 살짝 식힌 뒤에<br>밥 한 공기 기준 2~3스푼 정도 넣어서 섞어주는데<br>시간 지나도 밥알 안 굳고 윤기 살아있는 느낌이 확 달라요👀<br><br>💬 김밥 남겨주세요!!</div><button class="toggle">더보기</button>
+        </div>
+        <a class="btn" href="https://www.instagram.com/p/DYuCBIvvkyz/" target="_blank" rel="noopener" style="background:#F39C12">
+            인스타에서 보기 →
+        </a>
+    </article>
+    <article class="card" data-account="gomson.salim">
+        <div class="rank-strip" style="background:#4ECDC4">
+            <span class="rank">#2 🥈</span>
+            <span class="type">📷 캐러셀</span>
+        </div>
+        <header>
+            <div class="avatar" style="background:#4ECDC4">🐻</div>
+            <div class="user">
+                <div class="name">@gomson.salim</div>
+                <div class="desc">곰손살림 · 살림</div>
+            </div>
+            <div class="date">5/24</div>
+        </header>
+        <div class="hook">"🥗 먹으면 먹을수록 살 빠지는 음식이 있다네요"</div>
+        <div class="stats">
+            <div class="stat"><span class="lbl">좋아요</span><span class="val">871</span></div>
+            <div class="stat"><span class="lbl">댓글</span><span class="val hi">11.8K</span></div>
+            
+        </div>
+        <div class="cap">
+            <div class="cap-lbl">📝 캡션</div>
+            <div class="cap-short">🥗 먹으면 먹을수록 살 빠지는 음식이 있다네요<br><br>정유미님이 한창 살쪘을 때도 있었다는데<br>요즘은 몸매 관리 비결로<br>이 음식이 화제라네요 😳<br><br>✔ 자체 칼로리는 낮은데<br>→ 소화할 때 에너지를 더 많이 써서<br>→ 마이너…</div>
+            <div class="cap-full" style="display:none">🥗 먹으면 먹을수록 살 빠지는 음식이 있다네요<br><br>정유미님이 한창 살쪘을 때도 있었다는데<br>요즘은 몸매 관리 비결로<br>이 음식이 화제라네요 😳<br><br>✔ 자체 칼로리는 낮은데<br>→ 소화할 때 에너지를 더 많이 써서<br>→ 마이너스 칼로리 푸드로 유명 👀<br><br>게다가👇<br><br>✔ 항산화 성분 풍부<br>✔ 폐 건강 + 치매 예방 도움<br>✔ 혈당 관리에도 좋아서<br>→ 당뇨 관리 식단으로도 많이 찾는다네요<br><br>그래서 물처럼 자주 챙겨 먹는다고 💛<br><br>💬 댓글에 “빠져” 남겨주시면<br>정보 바로 보내드릴게요 💌</div><button class="toggle">더보기</button>
+        </div>
+        <a class="btn" href="https://www.instagram.com/p/DYtRvHjEW0h/" target="_blank" rel="noopener" style="background:#4ECDC4">
+            인스타에서 보기 →
+        </a>
+    </article>
+    <article class="card" data-account="_lilys_home">
+        <div class="rank-strip" style="background:#5DADE2">
+            <span class="rank">#3 🥉</span>
+            <span class="type">🎬 릴스</span>
+        </div>
+        <header>
+            <div class="avatar" style="background:#5DADE2">🌸</div>
+            <div class="user">
+                <div class="name">@_lilys_home</div>
+                <div class="desc">릴리스홈 · 뷰티건강</div>
+            </div>
+            <div class="date">5/24</div>
+        </header>
+        <div class="hook">"너무나 러블리한 분위기의 정유미님✨"</div>
+        <div class="stats">
+            <div class="stat"><span class="lbl">좋아요</span><span class="val">1,107</span></div>
+            <div class="stat"><span class="lbl">댓글</span><span class="val hi">5,582</span></div>
+            <div class="stat"><span class="lbl">재생</span><span class="val">442.6K</span></div>
+        </div>
+        <div class="cap">
+            <div class="cap-lbl">📝 캡션</div>
+            <div class="cap-short">너무나 러블리한 분위기의 정유미님✨<br>늘 슬림한 몸매에 맑은 분위기 비결이 궁금했는데요👀<br><br>평소 콩나물, 무, 브로콜리, 당근 등을<br>건조해서 만든 차를 즐겨 마신다고 하더라구요🥕<br><br>자극적인 음료 대신<br>가볍게 마시기…</div>
+            <div class="cap-full" style="display:none">너무나 러블리한 분위기의 정유미님✨<br>늘 슬림한 몸매에 맑은 분위기 비결이 궁금했는데요👀<br><br>평소 콩나물, 무, 브로콜리, 당근 등을<br>건조해서 만든 차를 즐겨 마신다고 하더라구요🥕<br><br>자극적인 음료 대신<br>가볍게 마시기 좋은 타입이라<br>평소 붓기 관리나 식단 신경 쓰는 분들 사이에서도<br>관심 가지는 분들이 많대요🤍<br><br>무겁지 않고 담백한 느낌이라<br>식후나 입 심심할 때 마시기 괜찮다는 후기도 많고,<br>꾸준한 루틴이 진짜 중요한 것 같아요</div><button class="toggle">더보기</button>
+        </div>
+        <a class="btn" href="https://www.instagram.com/p/DYvV1xOT49a/" target="_blank" rel="noopener" style="background:#5DADE2">
+            인스타에서 보기 →
+        </a>
+    </article>
+    <article class="card" data-account="chae2home">
+        <div class="rank-strip" style="background:#FFB347">
+            <span class="rank">#4 4️⃣</span>
+            <span class="type">🎬 릴스</span>
+        </div>
+        <header>
+            <div class="avatar" style="background:#FFB347">🍳</div>
+            <div class="user">
+                <div class="name">@chae2home</div>
+                <div class="desc">채이홈 · 살림</div>
+            </div>
+            <div class="date">5/23</div>
+        </header>
+        <div class="hook">"♥️댓글 남겨주시면 정보보내드릴게용♥️"</div>
+        <div class="stats">
+            <div class="stat"><span class="lbl">좋아요</span><span class="val">비공개</span></div>
+            <div class="stat"><span class="lbl">댓글</span><span class="val hi">5,896</span></div>
+            <div class="stat"><span class="lbl">재생</span><span class="val">166.4K</span></div>
+        </div>
+        <div class="cap">
+            <div class="cap-lbl">📝 캡션</div>
+            <div class="cap-short">♥️댓글 남겨주시면 정보보내드릴게용♥️<br>얼마전에 엄마가 집에 놀러오셨는데<br>물걸레질 하는거보고 그냥 그렇게하면 안된다고<br>입주청소 알바할때 알게 된 세제를 알려줬는데<br>진짜 묵은때가 싹 벗겨지면서 자연스레 코팅도되고<br>은은…</div>
+            <div class="cap-full" style="display:none">♥️댓글 남겨주시면 정보보내드릴게용♥️<br>얼마전에 엄마가 집에 놀러오셨는데<br>물걸레질 하는거보고 그냥 그렇게하면 안된다고<br>입주청소 알바할때 알게 된 세제를 알려줬는데<br>진짜 묵은때가 싹 벗겨지면서 자연스레 코팅도되고<br>은은한 향도 너무 좋아서, 이걸 왜 이제 알려줬냐고<br>했다니까요🫢 댓글 남겨주시면 정보 보내드릴게요🫶🏻</div><button class="toggle">더보기</button>
+        </div>
+        <a class="btn" href="https://www.instagram.com/p/DYswR61TjcW/" target="_blank" rel="noopener" style="background:#FFB347">
+            인스타에서 보기 →
+        </a>
+    </article>
+    <article class="card" data-account="chae2home">
+        <div class="rank-strip" style="background:#FFB347">
+            <span class="rank">#5 5️⃣</span>
+            <span class="type">🎬 릴스</span>
+        </div>
+        <header>
+            <div class="avatar" style="background:#FFB347">🍳</div>
+            <div class="user">
+                <div class="name">@chae2home</div>
+                <div class="desc">채이홈 · 살림</div>
+            </div>
+            <div class="date">5/25</div>
+        </header>
+        <div class="hook">"♥️댓글 남겨주시면 정보 보내드릴게요😉♥️"</div>
+        <div class="stats">
+            <div class="stat"><span class="lbl">좋아요</span><span class="val">비공개</span></div>
+            <div class="stat"><span class="lbl">댓글</span><span class="val hi">4,938</span></div>
+            <div class="stat"><span class="lbl">재생</span><span class="val">123.9K</span></div>
+        </div>
+        <div class="cap">
+            <div class="cap-lbl">📝 캡션</div>
+            <div class="cap-short">♥️댓글 남겨주시면 정보 보내드릴게요😉♥️<br>바쁜 아침 1분이면 완성되는 초간단 레시피인데<br>폭신달달 담백한게 너무 맛있는데다<br>칼슘이랑 단백질이 많이 들어 있어서<br>아이들 영양간식으로도 좋고, 다이어트용으로도<br>딱이더라구…</div>
+            <div class="cap-full" style="display:none">♥️댓글 남겨주시면 정보 보내드릴게요😉♥️<br>바쁜 아침 1분이면 완성되는 초간단 레시피인데<br>폭신달달 담백한게 너무 맛있는데다<br>칼슘이랑 단백질이 많이 들어 있어서<br>아이들 영양간식으로도 좋고, 다이어트용으로도<br>딱이더라구요🫶🏻 궁금하신 분들은 댓글 남겨주시면<br>초간단 레시피 바로 보내드릴게요🌸</div><button class="toggle">더보기</button>
+        </div>
+        <a class="btn" href="https://www.instagram.com/p/DYx8FpUzW4T/" target="_blank" rel="noopener" style="background:#FFB347">
+            인스타에서 보기 →
+        </a>
+    </article>
+    <article class="card" data-account="_lilys_home">
+        <div class="rank-strip" style="background:#5DADE2">
+            <span class="rank">#6 6️⃣</span>
+            <span class="type">🎬 릴스</span>
+        </div>
+        <header>
+            <div class="avatar" style="background:#5DADE2">🌸</div>
+            <div class="user">
+                <div class="name">@_lilys_home</div>
+                <div class="desc">릴리스홈 · 뷰티건강</div>
+            </div>
+            <div class="date">5/23</div>
+        </header>
+        <div class="hook">"연예인들 사이에서도"</div>
+        <div class="stats">
+            <div class="stat"><span class="lbl">좋아요</span><span class="val">544</span></div>
+            <div class="stat"><span class="lbl">댓글</span><span class="val hi">3,394</span></div>
+            <div class="stat"><span class="lbl">재생</span><span class="val">171.6K</span></div>
+        </div>
+        <div class="cap">
+            <div class="cap-lbl">📝 캡션</div>
+            <div class="cap-short">연예인들 사이에서도<br>“실물이 정말 예쁘다”는 이야기 자주 나오는데<br>특히 잡티 하나 없이<br>맑고 깨끗해 보이는 피부가 눈길 가더라구요👀<br><br>화보나 드라마 볼 때마다<br>유독 피부 표현이 깨끗해 보여서<br>대체 뭘 하길래 그런가…</div>
+            <div class="cap-full" style="display:none">연예인들 사이에서도<br>“실물이 정말 예쁘다”는 이야기 자주 나오는데<br>특히 잡티 하나 없이<br>맑고 깨끗해 보이는 피부가 눈길 가더라구요👀<br><br>화보나 드라마 볼 때마다<br>유독 피부 표현이 깨끗해 보여서<br>대체 뭘 하길래 그런가 궁금했는데<br>평소 꾸준히 챙긴다는 이 루틴템이 있다고🤍<br><br>과한 관리보다<br>매일 습관처럼 챙기는 게 중요하다던데<br>괜히 더 궁금해지는 관리법🥹</div><button class="toggle">더보기</button>
+        </div>
+        <a class="btn" href="https://www.instagram.com/p/DYszA3NTQF3/" target="_blank" rel="noopener" style="background:#5DADE2">
+            인스타에서 보기 →
+        </a>
+    </article>
+    <article class="card" data-account="hehe_home_tem">
+        <div class="rank-strip" style="background:#FF6B9D">
+            <span class="rank">#7 7️⃣</span>
+            <span class="type">📷 캐러셀</span>
+        </div>
+        <header>
+            <div class="avatar" style="background:#FF6B9D">🏠</div>
+            <div class="user">
+                <div class="name">@hehe_home_tem</div>
+                <div class="desc">헤헤홈템 · 살림꿀팁</div>
+            </div>
+            <div class="date">5/25</div>
+        </header>
+        <div class="hook">"우리 몸에 매일 쌓이는 독소 관리 어떻게 하고 계세요?🫠🍋"</div>
+        <div class="stats">
+            <div class="stat"><span class="lbl">좋아요</span><span class="val">664</span></div>
+            <div class="stat"><span class="lbl">댓글</span><span class="val hi">4,986</span></div>
+            
+        </div>
+        <div class="cap">
+            <div class="cap-lbl">📝 캡션</div>
+            <div class="cap-short">우리 몸에 매일 쌓이는 독소 관리 어떻게 하고 계세요?🫠🍋<br>몸에 순환이 잘 돼야 활력도 생기고<br>피부 트러블, 체지방까지 잡을 수 있어요!<br><br>이건 하루 한 잔씩 마시기 좋은 독소 비움 루틴인데<br>마실수록 속이 개운하…</div>
+            <div class="cap-full" style="display:none">우리 몸에 매일 쌓이는 독소 관리 어떻게 하고 계세요?🫠🍋<br>몸에 순환이 잘 돼야 활력도 생기고<br>피부 트러블, 체지방까지 잡을 수 있어요!<br><br>이건 하루 한 잔씩 마시기 좋은 독소 비움 루틴인데<br>마실수록 속이 개운하고<br>몸이 가벼워지는 느낌이라 손이 계속 가더라구요 😊<br><br>💛 댓글에 ‘ 쏙쏙 ’ 남겨주시면<br>독소 비움 차 레시피 바로 보내드릴게요 💌<br>(🔔 팔로우 + 댓글 주셔야 DM 오류 없이 가요 🫶)<br><br>🍋 독소 쌓인 듯 무거운 날 가볍게 챙기기 좋아요<br>🍋 붓고 답답한 느낌을 개운하게 풀어주는 루틴<br>🍋 달달한 음료 대신 마시기 좋아 부담 적음<br>🍋 느끼한 음식 먹은 뒤에도 속이 깔끔해요<br>🍋 체지방 관리할 때도 손이 자주 가는 음료<br><br>물은 억지로 잘 안 마시게 되는데<br>이렇게 만들어두면 하루 한 잔은 꼭 챙기게 돼요<br>몸이 무거운 날일수록 더 찾게 되는 루틴이에요✨<br><br>📥 메시지 안 보이면 ‘숨김함/요청함’ 꼭 확인해주세요 🫶<br>🔗 프로필 링크 &lt; 464 &gt; 번에서 바로 확인 가능해요 🥰<br>👉 @hehe_home_tem 바로가기 💜<br><br>#디톡스추천 #디톡스음료 #붓기관리 #체지방관리 #헤헤홈템</div><button class="toggle">더보기</button>
+        </div>
+        <a class="btn" href="https://www.instagram.com/p/DYweqS_mCCo/" target="_blank" rel="noopener" style="background:#FF6B9D">
+            인스타에서 보기 →
+        </a>
+    </article>
+    <article class="card" data-account="chae2home">
+        <div class="rank-strip" style="background:#FFB347">
+            <span class="rank">#8 8️⃣</span>
+            <span class="type">🎬 릴스</span>
+        </div>
+        <header>
+            <div class="avatar" style="background:#FFB347">🍳</div>
+            <div class="user">
+                <div class="name">@chae2home</div>
+                <div class="desc">채이홈 · 살림</div>
+            </div>
+            <div class="date">5/23</div>
+        </header>
+        <div class="hook">"♥️댓글 남겨주시면 정보 공유드릴게요😉♥️"</div>
+        <div class="stats">
+            <div class="stat"><span class="lbl">좋아요</span><span class="val">비공개</span></div>
+            <div class="stat"><span class="lbl">댓글</span><span class="val hi">3,613</span></div>
+            <div class="stat"><span class="lbl">재생</span><span class="val">119.8K</span></div>
+        </div>
+        <div class="cap">
+            <div class="cap-lbl">📝 캡션</div>
+            <div class="cap-short">♥️댓글 남겨주시면 정보 공유드릴게요😉♥️<br>아무리 빨래해도 옷에서 잡히지 않는 쉰내는<br>세탁기 청소가 안 되서라고 하더라구요<br>근데 이거만 넣고 싹 돌려주면 틈틈히 쌓인<br>세탁기 안 이물질까지 싹 씻겨내주니까<br>너무 좋은…</div>
+            <div class="cap-full" style="display:none">♥️댓글 남겨주시면 정보 공유드릴게요😉♥️<br>아무리 빨래해도 옷에서 잡히지 않는 쉰내는<br>세탁기 청소가 안 되서라고 하더라구요<br>근데 이거만 넣고 싹 돌려주면 틈틈히 쌓인<br>세탁기 안 이물질까지 싹 씻겨내주니까<br>너무 좋은거 있죠? 너무너무 간편하고 간단하게<br>청소가능하니까 댓글 남겨주시면 정보 공유드릴게요!</div><button class="toggle">더보기</button>
+        </div>
+        <a class="btn" href="https://www.instagram.com/p/DYqtUoFzca7/" target="_blank" rel="noopener" style="background:#FFB347">
+            인스타에서 보기 →
+        </a>
+    </article>
+    <article class="card" data-account="living_pluss">
+        <div class="rank-strip" style="background:#FF6F61">
+            <span class="rank">#9 9️⃣</span>
+            <span class="type">📷 캐러셀</span>
+        </div>
+        <header>
+            <div class="avatar" style="background:#FF6F61">💚</div>
+            <div class="user">
+                <div class="name">@living_pluss</div>
+                <div class="desc">리빙플러스 · 건강식단</div>
+            </div>
+            <div class="date">5/25</div>
+        </header>
+        <div class="hook">"추운 지역에서도 잘 자라서"</div>
+        <div class="stats">
+            <div class="stat"><span class="lbl">좋아요</span><span class="val">417</span></div>
+            <div class="stat"><span class="lbl">댓글</span><span class="val hi">4,661</span></div>
+            
+        </div>
+        <div class="cap">
+            <div class="cap-lbl">📝 캡션</div>
+            <div class="cap-short">추운 지역에서도 잘 자라서<br>생명력 강한 열매로 유명하다는데요 😳<br><br>상큼하게 먹기 좋아서<br>물에 타 마시는 사람들도 많고<br>요즘은 건강 루틴처럼 챙기는 분들도 늘었다더라구요 ✨<br><br>특히 항산화 성분 풍부하다고 알려지면서<br>…</div>
+            <div class="cap-full" style="display:none">추운 지역에서도 잘 자라서<br>생명력 강한 열매로 유명하다는데요 😳<br><br>상큼하게 먹기 좋아서<br>물에 타 마시는 사람들도 많고<br>요즘은 건강 루틴처럼 챙기는 분들도 늘었다더라구요 ✨<br><br>특히 항산화 성분 풍부하다고 알려지면서<br>꾸준히 찾는 이유가 있다던데<br>왜 인기 많은지 괜히 알겠음 🤍<br><br>❤️ “면역” 남겨주세요</div><button class="toggle">더보기</button>
+        </div>
+        <a class="btn" href="https://www.instagram.com/p/DYxBYzkEjck/" target="_blank" rel="noopener" style="background:#FF6F61">
+            인스타에서 보기 →
+        </a>
+    </article>
+    <article class="card" data-account="hehe_home_tem">
+        <div class="rank-strip" style="background:#FF6B9D">
+            <span class="rank">#10 🔟</span>
+            <span class="type">🎬 릴스</span>
+        </div>
+        <header>
+            <div class="avatar" style="background:#FF6B9D">🏠</div>
+            <div class="user">
+                <div class="name">@hehe_home_tem</div>
+                <div class="desc">헤헤홈템 · 살림꿀팁</div>
+            </div>
+            <div class="date">5/23</div>
+        </header>
+        <div class="hook">"애들 여름옷 새로 사면"</div>
+        <div class="stats">
+            <div class="stat"><span class="lbl">좋아요</span><span class="val">682</span></div>
+            <div class="stat"><span class="lbl">댓글</span><span class="val hi">3,553</span></div>
+            <div class="stat"><span class="lbl">재생</span><span class="val">100.4K</span></div>
+        </div>
+        <div class="cap">
+            <div class="cap-lbl">📝 캡션</div>
+            <div class="cap-short">애들 여름옷 새로 사면<br>목 뒤 라벨 때문에 긁고 난리 날 때 있죠 🫠👕<br><br>잘라내면 구멍 날까 걱정되고<br>잘린 단면이 더 따가울 때도 있는데<br>이거 하나 붙여주니까 따갑다는 말이 싹 줄더라구요<br><br>💛 댓글에 ‘ 보호 …</div>
+            <div class="cap-full" style="display:none">애들 여름옷 새로 사면<br>목 뒤 라벨 때문에 긁고 난리 날 때 있죠 🫠👕<br><br>잘라내면 구멍 날까 걱정되고<br>잘린 단면이 더 따가울 때도 있는데<br>이거 하나 붙여주니까 따갑다는 말이 싹 줄더라구요<br><br>💛 댓글에 ‘ 보호 ’ 남겨주시면<br>우리 아이 따가움 막아주는 꿀템 정보 바로 보내드릴게요 💌<br>(🔔 팔로우 + 댓글 주셔야 DM 오류 없이 가요 🫶)<br><br>👕 라벨 위에 붙이면 부드럽고 깔끔해요<br>👕 잘라내지 않아도 돼서 옷 손상 걱정 없음<br>👕 피부에 닿아도 부담 없는 보호 필름 타입<br>👕 세탁해도 잘 붙어 있어 활용도 좋아요<br>👕 떼어낼 때 끈적임 적어 깔끔하게 마무리<br><br>새옷 입힐 때마다 긁는 거 보면 마음 쓰였는데<br>이거 붙여두니까 옷 입히는 게 훨씬 편해졌어요<br>아이 여름옷 정리할 때 같이 해두면 진짜 든든해요✨<br><br>📥 메시지 안 보이면 ‘숨김함/요청함’ 꼭 확인해주세요 🫶<br>🔗 프로필 링크 &lt; 462 &gt; 번에서 바로 확인 가능해요 🥰<br>👉 @hehe_home_tem 바로가기 💜<br><br>#육아꿀템 #아이옷 #육아필수템 #여름옷준비 #헤헤홈템</div><button class="toggle">더보기</button>
+        </div>
+        <a class="btn" href="https://www.instagram.com/p/DYrYLvugnbc/" target="_blank" rel="noopener" style="background:#FF6B9D">
+            인스타에서 보기 →
+        </a>
+    </article></div>
+<footer>
+<p>🤖 매일 09시 자동 업데이트 · Apify × Claude</p>
+<p>참여도 = 좋아요 + 댓글×5 + 재생수×0.05</p>
+<p>※ chae2home은 좋아요 비공개</p>
+</footer>
+</div>
+<script>
+document.querySelectorAll('.fbtn').forEach(b=>{
+  b.addEventListener('click',()=>{
+    document.querySelectorAll('.fbtn').forEach(x=>x.classList.remove('active'));
+    b.classList.add('active');
+    const f=b.dataset.f;
+    document.querySelectorAll('.card').forEach(c=>{
+      c.style.display=(f==='all'||c.dataset.account===f)?'flex':'none';
+    });
+  });
+});
+document.querySelectorAll('.toggle').forEach(b=>{
+  b.addEventListener('click',()=>{
+    const w=b.parentElement;
+    const s=w.querySelector('.cap-short');
+    const f=w.querySelector('.cap-full');
+    if(f.style.display==='none'){s.style.display='none';f.style.display='block';b.textContent='접기';}
+    else{s.style.display='block';f.style.display='none';b.textContent='더보기';}
+  });
+});
+</script>
+</body>
+</html>
